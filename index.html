@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start Naviagtion Bar -->
+    <nav>
+      <div class="container nav-container">
+        <a href="" class="logo"> <h3>Mayank Rai</h3></a>
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- End Naviagtion Bar -->
+    <!-- Start Parallax -->
+    <section class="Parallax">
+      <img src="./img/hill1.png" id="hill1" />
+      <img src="./img/hill2.png" id="hill2" />
+      <img src="./img/hill3.png" id="hill3" />
+      <img src="./img/hill4.png" id="hill4" />
+      <img src="./img/tree.png" id="tree" />
+      <h1 class="heading-text">Parallax Website</h1>
+      <img src="./img/leaf.png" id="leaf" />
+      <img src="./img/plant.png" id="plant" />
+      <img src="./img/hill5.png" id="hill5" />
+    </section>
+    <!-- Start Parallax -->
+    <!-- Demo Text -->
+    <section class="Demo-Text">
+      <div class="contianer">
+        <h2>Parallax Scroll Website</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nisi, ut
+          sunt molestias vero beatae pariatur fugiat minus sequi culpa cumque
+          velit doloremque, quam est accusamus quod laudantium ex sapiente.
+          Ratione error voluptatem rerum a mollitia doloribus ut quo quidem modi
+          minima sint molestiae natus iure cupiditate tempore, numquam vel
+          aliquid quibusdam aperiam veniam doloremque ad? Temporibus excepturi
+          tempore ducimus dicta provident explicabo fuga sapiente obcaecati!
+          Autem pariatur quo tempore dolorem nihil beatae facilis, harum debitis
+          fugit minus quod explicabo sequi aliquam, nulla necessitatibus
+          assumenda omnis, doloribus culpa natus! Sunt fugiat enim dolore
+          sapiente expedita aliquid laborum reprehenderit id quo, ducimus animi
+          temporibus! Veniam maxime itaque quo deleniti officiis aspernatur,
+          tempore consectetur nulla aperiam in atque nemo velit suscipit! Alias
+          qui amet tempore neque, magni modi, sunt minima corrupti harum,
+          architecto numquam ratione sapiente veritatis sed veniam debitis
+          dolorem excepturi maiores velit. Voluptatem architecto quam vel
+          exercitationem quasi pariatur, dolore blanditiis temporibus excepturi
+          ratione! Vero totam aspernatur eos voluptatibus numquam sint sed
+          officia quos! Sint reprehenderit iure sit aliquid vitae error esse
+          aspernatur assumenda dignissimos exercitationem? Itaque libero quis
+          similique consectetur maiores rerum blanditiis doloribus,
+          necessitatibus ipsum voluptates reprehenderit. Aut eum accusamus
+          cumque inventore suscipit velit, fuga voluptate cupiditate ullam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nisi, ut
+          sunt molestias vero beatae pariatur fugiat minus sequi culpa cumque
+          velit doloremque, quam est accusamus quod laudantium ex sapiente.
+          Ratione error voluptatem rerum a mollitia doloribus ut quo quidem modi
+          minima sint molestiae natus iure cupiditate tempore, numquam vel
+          aliquid quibusdam aperiam veniam doloremque ad? Temporibus excepturi
+          tempore ducimus dicta provident explicabo fuga sapiente obcaecati!
+          Autem pariatur quo tempore dolorem nihil beatae facilis, harum debitis
+          fugit minus quod explicabo sequi aliquam, nulla necessitatibus
+          assumenda omnis, doloribus culpa natus! Sunt fugiat enim dolore
+          sapiente expedita aliquid laborum reprehenderit id quo, ducimus animi
+          temporibus! Veniam maxime itaque quo deleniti officiis aspernatur,
+          tempore consectetur nulla aperiam in atque nemo velit suscipit! Alias
+          qui amet tempore neque, magni modi, sunt minima corrupti harum,
+          architecto numquam ratione sapiente veritatis sed veniam debitis
+          dolorem excepturi maiores velit. Voluptatem architecto quam vel
+          exercitationem quasi pariatur, dolore blanditiis temporibus excepturi
+          ratione! Vero totam aspernatur eos voluptatibus numquam sint sed
+          officia quos! Sint reprehenderit iure sit aliquid vitae error esse
+          aspernatur assumenda dignissimos exercitationem? Itaque libero quis
+          similique consectetur maiores rerum blanditiis doloribus,
+          necessitatibus ipsum voluptates reprehenderit. Aut eum accusamus
+          cumque inventore suscipit velit, fuga voluptate cupiditate ullam.
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+    </section>
+    <!-- Demo Text -->
+    <!-- Start Script  -->
+    <script>
+      let Headingtext = document.querySelector(".heading-text");
+      let Leaf = document.querySelector("#leaf");
+      let Hill1 = document.querySelector("#hill1");
+      let Hill4 = document.querySelector("#hill4");
+      let Hill5 = document.querySelector("#hill5");
+
+      window.addEventListener("scroll", () => {
+        let value = window.scrollY;
+
+        Headingtext.style.marginTop = value * 2.5 + "px";
+        Leaf.style.top = value * -1.5 + "px";
+        Leaf.style.left = value * 1.5 + "px";
+        Hill5.style.left = value * 1.5 + "px";
+        Hill4.style.left = value * -1.5 + "px";
+        Hill1.style.top = value * 1 + "px";
+      });
+    </script>
+    <!-- End Script  -->
+  </body>
+</html>
